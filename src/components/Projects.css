@@ -1,0 +1,121 @@
+.projects__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.project__container{
+    padding: 1rem;
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-primary-2);
+    backdrop-filter: blur(3px);
+    transition: var(--transition);
+    height: fit-content;
+    border: 1px solid transparent
+    
+}
+.project__container:hover{
+    background-color: var(--color-bg-variant);
+    border: 1px solid white;
+}
+
+.project__container__head{
+    text-align: center;
+    text-transform: uppercase;
+    height: 3rem;
+    margin: -1rem -1rem 1.5rem -1rem;
+    border-radius: 10rem 10rem 0rem 0rem;
+    background-color: var(--color-primary-2);
+}
+
+.project__container__img{
+    height: max-content;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 0rem;
+    padding: 0rem;
+    transition: var(--transition);
+    margin-bottom: 1.5rem;
+}
+
+
+.project__container > p {
+    background-color: var(--color-primary-2);
+    border-radius: 2rem;
+    text-align: center;
+    height: 6rem;
+    transition: var(--transition);
+}
+
+
+.project__container__buttons {
+    margin: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.project__container__buttons > button{
+    width: unset;
+    height: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: var(--transition);
+    background-color: var(--color-primary-2);
+    border: 2px solid transparent;
+    font-family: inherit;
+    color: white;
+}
+.project__container__buttons :first-child{
+    border-radius: 1rem 1rem 1rem 2rem;
+    margin: -1 0 -1 -5rem;
+}
+.project__container__buttons :last-child{
+    border-radius: 1rem 1rem 2rem 1rem;
+    margin: -1 -5rem -1 0;
+}
+
+.project__container__buttons > button:hover {
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+/* =================== MEDIA QUERIES ========================= */
+
+
+
+
+@media screen and (max-width: 1024px){
+    #Projects{
+        height: 300vh
+    }
+    .projects__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        row-gap: 4rem;
+        place-items: center
+    }
+    .project__container{
+        width: 50vw;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    #Projects{
+        height: 250vh
+    }
+    .project__container{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,66 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    
+}
+
+.container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+    
+}
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.me{
+    overflow: hidden;
+    margin-top: 2.5rem;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 50%);
+    backdrop-filter: blur(4px);
+    width: 22rem ;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    padding: 0rem;
+    padding-top: 1rem;
+    clip-path: polygon(0 22%, 30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+#me_image{
+    transform: translate(0, -15%);
+}
+.scroll__down{
+    position: absolute;
+    right: 1rem;
+    bottom: 4rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* ============================= MEDIA QUERIES TAB & PHONES============================= */
+
+@media screen and (max-width: 1024px){
+    .container{
+        height: 68vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        height: 100vh;
+
+    }
+    .scroll__down{
+        display: none;
+    }
+}
