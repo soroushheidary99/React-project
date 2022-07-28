@@ -1,19 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import './Projects.css';
-import proj11 from '../assets/portfolio1.jpg'
-import proj12 from '../assets/portfolio2.jpg'
+import proj11 from '../assets/portfolio1.png'
+import proj12 from '../assets/portfolio2.png'
 
 
 
-const card_1_p = ['hi', 'bye'];
+const card_1_p = ['wallapper1', 'wallapper2'];
 const card_1_img = [proj11, proj12];
 const card_1_len = card_1_p.length;
 
-const card_2_p = ['yay', 'yiy'];
+const card_2_p = ['wallapper1', 'wallapper2'];
 const card_2_img = [proj11, proj12];
 const card_2_len = card_2_p.length;
 
-const card_3_p = ['yo', 'yey'];
+const card_3_p = ['wallapper1', 'wallapper2'];
 const card_3_img = [proj11, proj12];
 const card_3_len = card_3_p.length;
 

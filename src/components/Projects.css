@@ -9,7 +9,7 @@
     border-radius: 3rem;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--color-primary-2);
+    background-color: var(--color-bg-variant);
     backdrop-filter: blur(3px);
     transition: var(--transition);
     height: fit-content;
@@ -27,7 +27,7 @@
     height: 3rem;
     margin: -1rem -1rem 1.5rem -1rem;
     border-radius: 10rem 10rem 0rem 0rem;
-    background-color: var(--color-primary-2);
+    background-color: rgba(0,0,0,0.6);
 }
 
 .project__container__img{
@@ -42,11 +42,12 @@
 
 
 .project__container > p {
-    background-color: var(--color-primary-2);
+    background-color: var(--color-bg);
     border-radius: 2rem;
     text-align: center;
     height: 6rem;
     transition: var(--transition);
+    padding-top: 1.5rem;
 }
 
 
@@ -64,7 +65,7 @@
     padding: 1rem;
     border-radius: 1rem;
     transition: var(--transition);
-    background-color: var(--color-primary-2);
+    background-color: var(--color-bg);
     border: 2px solid transparent;
     font-family: inherit;
     color: white;
